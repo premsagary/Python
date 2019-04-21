@@ -11,15 +11,15 @@ class Edureka:
     def getter_courseName(self):
         return self.courseName
 
-    def setter_courseName(self):
-        self.courseName = new_val
+    def setter_courseName(self, new_val):
+        self.new_val = new_val
 
 
 object = Edureka("Python")
 print(object.getter_courseName())
 
 object.courseName = "new value"   # Bad Practice
-object.setter_courseName("new_value")
-
-object = Edureka("Python")
 print(object.setter_courseName())
+
+object1 = Edureka("Python")
+print(object1.setter_courseName())
